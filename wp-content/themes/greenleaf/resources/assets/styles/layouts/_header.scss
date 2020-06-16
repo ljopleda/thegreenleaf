@@ -1,0 +1,63 @@
+/* eslint-disable indent */
+.banner .nav li {
+  @extend .nav-item;
+}
+
+.banner .nav a {
+  @extend .nav-link;
+}
+
+.banner {
+  #container-header {
+    padding: 60px 0;
+    z-index: 1;
+
+    .nav-container {
+      padding: 0 55px;
+
+      .social-media-icons {
+				a {
+					margin: 0 10px;
+				}
+			}
+
+      .menu-main-menu-container {
+      	#menu-main-menu {
+      		margin: 0 auto;
+      		width: fit-content;
+      		> li {
+      			padding: 0 30px;
+      			box-sizing: border-box;
+      			a {
+		          font-family: Proxima Nova, sans-serif !important;
+		          font-style: normal;
+		          font-weight: normal;
+		          font-size: 16px;
+		          line-height: 19px;
+		          text-align: center;
+		          letter-spacing: 0.3em;
+		          color: #333;
+		          padding: 0;
+		        }
+      		}
+      	}
+      }
+    }
+  }
+
+  .header-background {
+    position: absolute;
+    height: 1495px;
+    width: 100%;
+    top: 0;
+    z-index: -1;
+
+    .header-background-gradient {
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0) 24.09%, #9df7fc 100%);
+      opacity: 0.2;
+      transform: matrix(1, 0, 0, -1, 0, 0);
+      height: 1495px;
+      width: 100%;
+    }
+  }
+}
